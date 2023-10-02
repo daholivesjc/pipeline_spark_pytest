@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "simulation-de"
+version = "0.1.0"
+description = "Pipeline test"
+authors = ["Daniel <daniel.holiveira@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+click = "^8.1.7"
+findspark = "^2.0.1"
+mypy-extensions = "^1.0.0"
+packaging = "^23.2"
+pathspec = "^0.11.2"
+platformdirs = "^3.10.0"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+my-script = "src:main"
